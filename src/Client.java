@@ -19,6 +19,8 @@ public class Client {
             System.out.println(bufferedReader.readLine());
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            scanner.close();
         }
     }
 
